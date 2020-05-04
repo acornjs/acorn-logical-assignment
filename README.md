@@ -4,7 +4,7 @@
 
 This is a plugin for [Acorn](http://marijnhaverbeke.nl/acorn/) - a tiny, fast JavaScript parser, written completely in JavaScript.
 
-It implements support for logical assignments as defined in the stage 3 proposal [Logical Assignments](https://github.com/tc39/proposal-logical-assignments). The AST follows [ESTree](https://github.com/estree/estree/blob/master/experimental/logical-assignment-operators.md).
+It implements support for logical assignments as defined in the stage 3 proposal [Logical Assignments](https://github.com/tc39/proposal-logical-assignment). The AST follows [ESTree](https://github.com/estree/estree/blob/master/experimental/logical-assignment-operators.md).
 
 ## Usage
 
@@ -12,8 +12,8 @@ This module provides a plugin that can be used to extend the Acorn `Parser` clas
 
 ```javascript
 var acorn = require('acorn');
-var logicalAssignments = require('acorn-logical-assignments');
-acorn.Parser.extend(logicalAssignments).parse('x ||= y');
+var logicalAssignment = require('acorn-logical-assignment');
+acorn.Parser.extend(logicalAssignment).parse('x ||= y');
 ```
 
 ## License

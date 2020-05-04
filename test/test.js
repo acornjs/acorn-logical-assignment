@@ -26,7 +26,7 @@ function testFail(text, expectedError, additionalOptions) {
 
 const newNode = (start, props) => Object.assign(new acorn.Node({options: {}}, start), props)
 
-describe("acorn-logical-assignments", function () {
+describe("acorn-logical-assignment", function () {
   const lhs = [
     {d: "x", ast: start => newNode(start, {
       type: "Identifier",
