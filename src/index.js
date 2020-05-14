@@ -1,6 +1,4 @@
-"use strict"
-
-module.exports = function(Parser) {
+export default function logicalAssignment(Parser) {
   const acorn = Parser.acorn || require("acorn")
   const tt = acorn.tokTypes
   return class extends Parser {

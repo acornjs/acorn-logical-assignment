@@ -2,7 +2,8 @@
   "name": "acorn-logical-assignment",
   "version": "0.1.1",
   "description": "Support for logical assignments in acorn",
-  "main": "index.js",
+  "main": "dist/acorn-logical-assignment.js",
+  "module": "dist/acorn-logical-assignment.mjs",
   "repository": "https://github.com/acornjs/acorn-logical-assignment",
   "author": "Adrian Heine <mail@adrianheine.de>",
   "license": "MIT",
@@ -10,6 +11,8 @@
     "node": ">=4.8.2"
   },
   "scripts": {
+    "build": "rollup -c rollup.config.js",
+    "prepare": "npm run build",
     "test": "mocha",
     "test:test262": "node run_test262.js",
     "lint": "eslint -c .eslintrc.json ."
@@ -22,6 +25,7 @@
     "eslint": "^7",
     "eslint-plugin-node": "^11",
     "mocha": "^8",
+    "rollup": "^2.10.0",
     "test262": "git+https://github.com/tc39/test262.git#adf2cf4204a748463cacb68f07d0d006b00c3821",
     "test262-parser-runner": "^0.5.0"
   }
