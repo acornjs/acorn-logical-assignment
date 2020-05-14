@@ -8,12 +8,21 @@ It implements support for logical assignments as defined in the stage 3 proposal
 
 ## Usage
 
-This module provides a plugin that can be used to extend the Acorn `Parser` class to parse logical assignments:
+This module provides a plugin that can be used to extend the Acorn `Parser` class to parse logical assignments.
+You can either choose to use it via CommonJS (for example in Node.js) like this
 
 ```javascript
 var acorn = require('acorn');
 var logicalAssignment = require('acorn-logical-assignment');
 acorn.Parser.extend(logicalAssignment).parse('x ||= y');
+```
+
+or as an ECMAScript module like this:
+
+```javascript
+import {Parser} from 'acorn';
+import logicalAssignment from 'path/to/acorn-logical-assignment.mjs';
+Parser.extend(logicalAssignment).parse('x ||= y');
 ```
 
 ## License
