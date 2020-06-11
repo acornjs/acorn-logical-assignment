@@ -1,7 +1,7 @@
 {
   "name": "acorn-logical-assignment",
   "version": "0.1.0",
-  "description": "Support fot logical assignments in acorn",
+  "description": "Support for logical assignments in acorn",
   "main": "index.js",
   "repository": "https://github.com/acornjs/acorn-logical-assignment",
   "author": "Adrian Heine <mail@adrianheine.de>",
