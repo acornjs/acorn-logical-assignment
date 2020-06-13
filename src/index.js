@@ -1,3 +1,4 @@
+// eslint-disable-next-line node/no-unsupported-features/es-syntax
 export default function logicalAssignment(Parser) {
   const acorn = Parser.acorn || require("acorn")
   const tt = acorn.tokTypes
