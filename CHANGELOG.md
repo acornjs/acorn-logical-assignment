@@ -1,3 +1,7 @@
+## 0.1.3 (2020-06-13)
+
+* Restore compatibility with acorn@6
+
 ## 0.1.2 (2020-06-13)
 
 * Migrate to ESM
