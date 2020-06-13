@@ -28,7 +28,7 @@ export default function logicalAssignment(Parser) {
           if (next === 61) return this.finishOp(tt.assign, 3)
         }
       }
-      return super.readToken_question()
+      return super.readToken_question ? super.readToken_question() : this.finishOp(tt.question, 1)
     }
   }
 }
