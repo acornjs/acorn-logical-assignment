@@ -1,3 +1,8 @@
+## 0.1.4 (2020-08-13)
+
+* Mark as compatible with acorn@8
+* Fix ESM build
+
 ## 0.1.3 (2020-06-13)
 
 * Restore compatibility with acorn@6
